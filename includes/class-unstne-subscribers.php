@@ -236,8 +236,10 @@ class UNSTNE_Subscribers {
         $values[] = $offset;
 
         if ( count( $values ) > 2 ) {
+            // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- All interpolated identifiers are safe: $this->table_name is WP-prefixed, $where_clause is assembled from hardcoded fragments ("status = %s", "(email LIKE %s OR name LIKE %s)") with values bound via prepare(), $orderby goes through sanitize_sql_orderby().
             $results = $wpdb->get_results( $wpdb->prepare( $sql, $values ) );
         } else {
+            // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- See above; same safe-identifier guarantees.
             $results = $wpdb->get_results( $wpdb->prepare( $sql, $args['per_page'], $offset ) );
         }
 
@@ -319,6 +321,7 @@ class UNSTNE_Subscribers {
         header( 'Content-Type: text/csv; charset=utf-8' );
         header( 'Content-Disposition: attachment; filename=newsletter-subscribers-' . gmdate( 'Y-m-d' ) . '.csv' );
 
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen -- Streaming CSV export to php://output; WP_Filesystem is not applicable.
         $output = fopen( 'php://output', 'w' );
 
         // Header row.
@@ -335,6 +338,7 @@ class UNSTNE_Subscribers {
             ) );
         }
 
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Closes the streaming php://output handle opened above; WP_Filesystem is not applicable.
         fclose( $output );
         exit;
     }
