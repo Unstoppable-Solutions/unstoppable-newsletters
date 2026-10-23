@@ -3,7 +3,7 @@
  * Plugin Name: Unstoppable Newsletters
  * Plugin URI: https://unstoppablesolutions.app/plugins/unstoppable-newsletters/
  * Description: A beautiful, filterable newsletter library with year tabs, featured sections, and PDF downloads. Perfect for any organization that publishes monthly newsletters.
- * Version: 1.6.15
+ * Version: 1.6.16
  * Author: Unstoppable Solutions
  * Author URI: https://unstoppablesolutions.app
  * Text Domain: unstoppable-newsletters
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants.
-define( 'UNSTNE_VERSION', '1.6.15' );
+define( 'UNSTNE_VERSION', '1.6.16' );
 define( 'UNSTNE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'UNSTNE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'UNSTNE_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );

@@ -3,7 +3,7 @@ Contributors: paramedic192
 Tags: newsletter, pdf, email newsletter, monthly newsletter, document library
 Requires at least: 5.8
 Tested up to: 7.1
-Stable tag: 1.6.15
+Stable tag: 1.6.16
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -120,6 +120,11 @@ Visit [https://unstoppablesolutions.app](https://unstoppablesolutions.app) for d
 5. Individual newsletter edit screen
 
 == Changelog ==
+
+= 1.6.16 =
+* Added CHANGELOG.md with full version history
+* Added ROADMAP.md with development priorities
+* Improved CI/CD workflow configuration
 
 = 1.6.15 =
 * Added: Newsletter search functionality with live search

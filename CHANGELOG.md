@@ -7,6 +7,15 @@ This changelog follows [Keep a Changelog](https://keepachangelog.com) format.
 
 _No unreleased changes._
 
+## [1.6.16] - 2026-10-23
+
+### Added
+- CHANGELOG.md with full version history
+- ROADMAP.md with development priorities
+
+### Changed
+- Improved CI/CD workflow configuration
+
 ## [1.6.15] - 2026-09-07
 
 ### Added
