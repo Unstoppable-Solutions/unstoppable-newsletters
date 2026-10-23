@@ -44,7 +44,7 @@ Known phpcs:ignores in includes/class-unstne-subscribers.php: lines ~239/241 for
 
 - **GPL-2.0-or-later** on everything.
 - **One author** for Contributors: in `readme.txt`: `paramedic192` (Dave Stevens).
-- **Tested up to** is bumped as WordPress ships each new .x. We're currently on 7.1 ("Mary Lou", Aug 2026).
+- **Tested up to** is bumped as WordPress ships each new .x. We're currently on 7.1.3 (October 2026).
 - **Plugin Check CI config** (`.github/workflows/plugin-check.yml`) is standard across the org: `exclude-checks: late_escaping` + `exclude-files` lists the GitHub-only files (`.github`, `.distignore`, `.gitignore`, `.gitattributes`, `README.md`, `CLAUDE.md`, `SECURITY.md`, `CONTRIBUTING.md`, `CHANGELOG.md`).
 - **`.distignore`** keeps GitHub-only files out of the WP.org zip (CI, docs, this file).
 - **Prefer `phpcs:ignore` + inline rationale** over removing the ignored check from CI entirely — a specific ignore documents the decision at the call site; a check removal silently covers future code too.
