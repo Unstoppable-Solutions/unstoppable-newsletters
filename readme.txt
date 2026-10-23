@@ -2,7 +2,7 @@
 Contributors: paramedic192
 Tags: newsletter, pdf, email newsletter, monthly newsletter, document library
 Requires at least: 5.8
-Tested up to: 7.1.3
+Tested up to: 7.1
 Stable tag: 1.6.15
 Requires PHP: 7.4
 License: GPLv2 or later

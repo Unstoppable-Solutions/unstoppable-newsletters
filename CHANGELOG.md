@@ -5,8 +5,7 @@ This changelog follows [Keep a Changelog](https://keepachangelog.com) format.
 
 ## [Unreleased]
 
-### Changed
-- Updated "Tested up to" WordPress 7.1.3
+_No unreleased changes._
 
 ## [1.6.15] - 2026-09-07
 
